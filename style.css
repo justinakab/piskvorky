@@ -1,0 +1,81 @@
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  min-width: 350px;
+  background-color: #283e50;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.box__image {
+  background-image: url(images/uvodni.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.box__image img {
+  width: 100%;
+
+}
+
+.box__title {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.box__description {
+  padding: 1.5rem 0.5rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin-top: 0;
+
+}
+
+.box__button {
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+
+}
+
+.box__button--rules {
+  background-color: #1fcca4;
+  border-bottom: 1px solid #283e50;
+}
+
+.box__button--rules:hover {
+  background-color: #1cbb96;
+  cursor: pointer;
+}
+
+.box__button--start {
+  background-color: #0197f6;
+}
+
+.box__button--start:hover {
+  background-color: #0090e9;
+  cursor: pointer;
+
+}
