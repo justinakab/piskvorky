@@ -93,6 +93,8 @@ body {
 
 }
 
+/* hra */
+
 .content {
   color: white;
   display: flex;
@@ -140,6 +142,7 @@ body {
   align-items: center;
 }
 
+
 .playgroundHeader__img {
   width: 100%;
 }
@@ -165,6 +168,7 @@ body {
 
 }
 
+
 .playground__grid {
   width: 70vw;
   height: 75vh;
@@ -183,10 +187,24 @@ body {
   background: none;
   border: 0.5px solid black;
   outline: none;
-  padding: 0;
 }
 
 .playground__button:hover {
   background-color: rgba(255, 255, 255, 0.50);
   cursor: pointer;
+}
+
+.board__field--circle {
+  background-image: url(images/circle.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.board__field--cross {
+  background-image: url(images/cross.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
