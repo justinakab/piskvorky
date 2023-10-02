@@ -195,14 +195,14 @@ body {
 }
 
 .board__field--circle {
-  background-image: url(images/circle.svg);
+  background-image: url(images/circle-black.svg);
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .board__field--cross {
-  background-image: url(images/cross.svg);
+  background-image: url(images/cross-black.svg);
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
