@@ -199,6 +199,8 @@ body {
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: grow;
+  animation-duration: 0.10s;
 }
 
 .board__field--cross {
@@ -206,5 +208,20 @@ body {
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: grow;
+  animation-duration: 0.10s;
 
+}
+
+/* animace odehrání */
+
+@keyframes grow {
+
+  from {
+    background-size: 0%;
+  }
+
+  to {
+    background-size: 60%;
+  }
 }
