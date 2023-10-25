@@ -6,6 +6,7 @@ const buttons = document.querySelectorAll('.playground__button');
 const imagePlayer = document.querySelector('.image-player');
 const repeatButton = document.querySelector('#restart-button');
 
+// funkce odehrání
 const odehrani = (event) => {
   if (currentPlayer === 'circle') {
     event.target.classList.toggle('board__field--circle');
@@ -31,10 +32,10 @@ const varovani = (event) => {
   }
 };
 
+// volání funkce varování na zpětném tlačítku
 repeatButton.addEventListener('click', varovani);
 
-// část 3
-
+// volání odehrání na každém eventu na poli
 buttons.forEach((button) => {
   button.addEventListener('click', odehrani);
 });
@@ -53,7 +54,7 @@ const evaluation = async () => {
     }
   });
 
-  // spuštění funkce
+  // spuštění rozhodovací funkce
   const winner = findWinner(field);
 
   // časovače odpovědí
@@ -73,10 +74,10 @@ const evaluation = async () => {
     setTimeout(() => {
       location.reload();
     }, 1000);
-    // 5 část
-    // podmínka
+
+    // podmínka pro AI cross hráče
   } else if (winner === null && currentPlayer === 'cross') {
-    // znemožnění odehrání
+    // znemožnění odehrání circle
     buttons.forEach((button) => {
       button.disabled = true;
     });
